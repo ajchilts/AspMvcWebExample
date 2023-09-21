@@ -10,19 +10,19 @@ using System.Web.Mvc;
 namespace AspMvcWebExample.Tests.Controllers
 {
     [TestClass]
-    public class HomeControllerTest
+    public class ContactControllerTest
     {
         [TestMethod]
-        public void About()
+        public void Contact()
         {
             // Arrange
-            HomeController controller = new HomeController();
+            ContactController controller = new ContactController();
 
             // Act
-            ViewResult result = controller.About() as ViewResult;
+            ViewResult result = controller.Contact() as ViewResult;
 
             // Assert
-            Assert.AreEqual("Your application description page.", result.ViewBag.Message);
+            Assert.IsNotNull(result);
         }
     }
 }
