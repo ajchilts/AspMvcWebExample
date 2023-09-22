@@ -6,11 +6,12 @@ using System.Web.Mvc;
 
 namespace AspMvcWebExample.Controllers
 {
-    public class HomeController : Controller
+    public class ContactController : Controller
     {
-        public ActionResult About()
+
+        public ActionResult Contact()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "Your contact page.";
 
             return View();
         }
